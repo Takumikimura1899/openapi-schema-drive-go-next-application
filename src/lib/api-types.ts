@@ -45,8 +45,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         User: {
-            id?: string;
-            name?: string;
+            id: string;
+            name: string;
         };
     };
     responses: never;
