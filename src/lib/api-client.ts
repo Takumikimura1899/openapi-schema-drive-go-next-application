@@ -1,6 +1,8 @@
 import createClient from "openapi-fetch";
 import type { paths } from "./api-types";
+import "server-only";
+import { env } from "@/utils/env";
 
 export const api = createClient<paths>({
-	baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8080",
+	baseUrl: env.NEXT_API_URL,
 });

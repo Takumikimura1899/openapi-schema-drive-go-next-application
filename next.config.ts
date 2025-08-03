@@ -1,7 +1,8 @@
+import dotenv from "dotenv";
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+dotenv.config({ path: ".env.mock" });
+
+const nextConfig: NextConfig = {};
 
 export default nextConfig;
